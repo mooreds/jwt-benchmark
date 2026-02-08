@@ -52,7 +52,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.benchmark.BenchmarkRunner</mainClass>
+                                    <mainClass>com.benchmark.SimpleBenchmark</mainClass>
                 </configuration>
             </plugin>
 
@@ -70,7 +70,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.benchmark.BenchmarkRunner</mainClass>
+                    <mainClass>com.benchmark.SimpleBenchmark</mainClass>
                                 </transformer>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                             </transformers>
